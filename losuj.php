@@ -34,7 +34,7 @@
   
   //sprawdzanie czy w gecie podane sa odpowiednie zmienne
   if(!isset($_GET['step']) || !isset($_GET['id'])){
-     echo '<p>niepoprawne wywolanie</p>';
+     die('<p>niepoprawne wywolanie</p>');
   }
 
   //wyciaganie z adresu wpisu pierwszego ciagu liczb - czyli id wpisu
